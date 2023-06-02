@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_btn_login"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MapActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="Emergency Assistance"
+        android:textColor="#171B25"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:text="Do you want to send your current location to your emergency contact and call for help at the same time"
+        android:textColor="#9FA3B0"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/dialog_map" />
+
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#F1F2F5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/incident_cancel"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#414960" />
+
+        <View
+            android:background="#F1F2F5"
+            android:layout_width="1dp"
+            android:layout_height="56dp"/>
+
+        <TextView
+            android:id="@+id/incident_action"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Action"
+            android:textColor="#7856FF" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

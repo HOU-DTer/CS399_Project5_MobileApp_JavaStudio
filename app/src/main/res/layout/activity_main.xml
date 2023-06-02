@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/main_bg">
+
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="165dp"
+        android:src="@mipmap/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true">
+
+
+
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account"
+            android:background="@null"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColorHint="@color/white"
+
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/tv_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="password"
+            android:textColorHint="@color/white"
+            android:background="@null"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+
+            />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/title"
+            android:text="THE EYE OF AUCKLAND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/title"
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="44dp"
+            android:textSize="14sp"
+            android:text="Sign up"
+            android:background="@drawable/shape_btn_sign_up"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="44dp"
+            android:text="Log in"
+            android:textSize="14sp"
+            android:textColor="#414960"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_btn_login"
+            android:layout_marginTop="30dp"/>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
